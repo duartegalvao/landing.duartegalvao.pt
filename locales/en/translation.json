@@ -1,0 +1,49 @@
+{
+  "header": {
+    "subtitle": "IT expert & musician"
+  },
+  "engineering": {
+    "title": "Computer Engineering",
+    "p1": "MsC alumnus from <em>Instituto Superior T&eacute;cnico</em> (IST) of the <em>University of Lisbon</em>. Worked as a Teaching Assistant for <em>Computer Architecture</em> and <em>Databases</em> courses.",
+    "p2": "Professional experience as System Administrator and App Developer at the Department of Computer Engineering (DEI) of IST, and as a Junior Researcher at INESC-ID, as part of the SARRROCA project.",
+    "p3": "Worked for three years as a full-stack developer for <a href=\"https://home.cern/\">CERN</a> in Geneva, Switzerland, as part of the <a href=\"https://getindico.io/\">Indico</a> project, an open-source web tool for organizing and archiving meetings, lectures and conferences. Coordinated the collaboration between Indico and <a href=\"https://www.jacow.org/\">JACoW</a>, attending large conferences such as <a href=\"https://ipac24.org/\">IPAC</a> to perform user-tests in real-life scenarios and develop improvements to the tools together with its users.",
+    "p4": "Currently working as an independent contractor developing web platforms focused on event management and organizing."
+  },
+  "workflow": {
+    "title": "How I Work With Clients",
+    "step1": {
+      "title": "1. Discovery",
+      "text": "We start with a clear conversation about your goals, needs, and existing challenges. I ask questions and listen carefully."
+    },
+    "step2": {
+      "title": "2. Solution Design",
+      "text": "I propose a tailored solution, outlining the stack, timeline, and budget. You get clarity and transparency before we begin."
+    },
+    "step3": {
+      "title": "3. Build & Deliver",
+      "text": "We move forward with regular check-ins, fast iterations, and smooth handoff or long-term support — depending on your needs."
+    }
+  },
+  "stack": {
+    "title": "Tech Stack I Work With",
+    "python": "Backend, APIs, automation, data workflows",
+    "react": "Frontend SPAs, dynamic interfaces, hooks",
+    "htmlcss": "Responsive layouts, clean design, accessibility"
+  },
+  "music": {
+    "title": "Music",
+    "p1": "Self-taught Portuguese Guitar and Classical Guitar player.",
+    "p2": "Studying and regularly performing Coimbra Fado soloist and group repertoire in Lisbon. Occasionally performing Lisbon Fado as well, and other styles such as greek Rebetika."
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email"
+  },
+  "footer": {
+    "locationTitle": "Location",
+    "location": "Lisbon, Portugal",
+    "socialTitle": "Social media",
+    "moreTitle": "More",
+    "more": "Feel free to contact me for business inquiries at any time."
+  }
+}

@@ -7,17 +7,34 @@
         <meta name="author" content="Duarte Galvão">
         <title>Duarte Galv&atilde;o</title>
         <!-- Font Awesome icons (free version)-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="js/fontawesome.all.min.js"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet">
         <!-- Fonts CSS-->
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
         <link rel="stylesheet" href="css/custom.css">
+        <!-- Translations -->
+        <script src="js/i18next.min.js"></script>
+        <script src="js/i18nextBrowserLanguageDetector.min.js"></script>
+        <script src="js/i18nextHttpBackend.min.js"></script>
+        <script src="js/translations.js" defer></script>
     </head>
     <body id="page-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-white">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="i18next.changeLanguage('pt', updateContent)">PT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="i18next.changeLanguage('en', updateContent)">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <header class="masthead text-white text-center w-100 mw-100 p-5" style="height: 100vh; position: absolute; z-index: 100;">
-            <div class="container align-items-center">
+            <div class="container align-items-center overflow-hidden">
                 <img src="assets/img/logo_white.svg" class="m-5" style="height: 30vh;" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading mb-0">Duarte Galvão</h1>
@@ -29,7 +46,7 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <div class="pre-wrap masthead-subheading font-weight-light mb-0 text-center">
-                    <h3>IT expert & musician</h3>
+                    <h3 data-i18n="header.subtitle">IT expert & musician</h3>
                 </div>
             </div>
         </header>
@@ -40,59 +57,102 @@
                 </div>
                 <div class="col w-50 big-btn" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/img2.jpg'); background-size: cover; height: 100vh;">
                     <div class="overlay"></div></div>
+                </div>
             </div>
-        </div>
-        <section class="page-section text-white" style="background-color: #2e211a;">
-            <div class="container">
-                <div class="row font-weight-light">
-                    <div class="col">
-                        <h3>Computer Engineering</h3>
-                        <p>
-                            MsC alumnus from <em>Instituto Superior T&eacute;cnico</em> (IST) of the <em>University of Lisbon</em>. Worked as a Teaching Assistant for <em>Computer Architecture</em> and <em>Databases</em> courses.
-                        </p>
-                        <p>
-                            Professional experience as System Administrator and App Developer at the Department of Computer Engineering (DEI) of IST, and as a Junior Researcher at INESC-ID, as part of the SARRROCA project.
-                        </p>
-                        <p>
-                            Worked for three years as a full-stack developer for <a href="https://home.cern/">CERN</a> in Geneva, Switzerland, as part of the <a href="https://getindico.io/">Indico</a> project, an open-source web tool for organizing and archiving meetings, lectures and conferences. Coordinated the collaboration between Indico and <a href="https://www.jacow.org/">JACoW</a>, attending large conferences such as <a href="https://ipac24.org/">IPAC</a> to perform user-tests in real-life scenarios and develop improvements to the tools together with its users.
-                        </p>
-                        <p>
-                            Currently working as an independent contractor IT developing solutions for event management and organizing.
-                        </p>
+            <section class="page-section text-white" style="background-color: #2e211a;">
+                <div class="container">
+                    <div class="row font-weight-light">
+                        <div class="col">
+                            <h3 data-i18n="engineering.title">Computer Engineering</h3>
+                            <p data-i18n="engineering.p1">
+                                MsC alumnus from <em>Instituto Superior T&eacute;cnico</em> (IST) of the <em>University of Lisbon</em>. Worked as a Teaching Assistant for <em>Computer Architecture</em> and <em>Databases</em> courses.
+                            </p>
+                            <p data-i18n="engineering.p2">
+                                Professional experience as System Administrator and App Developer at the Department of Computer Engineering (DEI) of IST, and as a Junior Researcher at INESC-ID, as part of the SARRROCA project.
+                            </p>
+                            <p data-i18n="engineering.p3">
+                                Worked for three years as a full-stack developer for <a href="https://home.cern/">CERN</a> in Geneva, Switzerland, as part of the <a href="https://getindico.io/">Indico</a> project, an open-source web tool for organizing and archiving meetings, lectures and conferences. Coordinated the collaboration between Indico and <a href="https://www.jacow.org/">JACoW</a>, attending large conferences such as <a href="https://ipac24.org/">IPAC</a> to perform user-tests in real-life scenarios and develop improvements to the tools together with its users.
+                            </p>
+                            <p data-i18n="engineering.p4">
+                                Currently working as an independent contractor developing web platforms focused on event management and organizing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container m-0 w-100 mw-100" style="background-color: #1f1f1f;">
+                <div class="row">
+                    <div class="col w-100" style="background-image: url('assets/img/ipac24.jpg'); background-size: cover; height: 100vh; background-position: center;">
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="container m-0 w-100 mw-100" style="background-color: #1f1f1f;">
-            <div class="row">
-                <div class="col w-100" style="background-image: url('assets/img/ipac24.jpg'); background-size: cover; height: 100vh; background-position: center;">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col w-100" style="background-image: url('assets/img/indico_workshop.jpg'); background-size: cover; height: 100vh; background-position: center;">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-        </div>
-        <section class="page-section text-white text-right" style="background-color: #1a252f;">
-            <div class="container">
-                <div class="row font-weight-light">
-                    <div class="col">
-                        <h3>Music</h3>
-                        <p>
-                            Self-taught Portuguese Guitar and Classical Guitar player.
-                        </p>
-                        <p>
-                            Studying and regularly performing Coimbra Fado soloist and group repertoire in Lisbon. Occasionally performing Lisbon Fado as well, and other styles such as greek Rebetika.
-                        </p>
+            <div class="container m-0 w-100 mw-100 p-5" style="background-color: #f0ffff;">
+                <h2 class="text-center mb-4" data-i18n="workflow.title">How I Work With Clients</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-comments fa-3x text-primary mb-3"></i>
+                        <h5 data-i18n="workflow.step1.title">1. Discovery</h5>
+                        <p data-i18n="workflow.step1.text">We start with a clear conversation about your goals, needs, and existing challenges. I ask questions and listen carefully.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-diagram-project fa-3x text-success mb-3"></i>
+                        <h5 data-i18n="workflow.step2.title">2. Solution Design</h5>
+                        <p data-i18n="workflow.step2.text">I propose a tailored solution, outlining the stack, timeline, and budget. You get clarity and transparency before we begin.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-rocket fa-3x text-warning mb-3"></i>
+                        <h5 data-i18n="workflow.step3.title">3. Build & Deliver</h5>
+                        <p data-i18n="workflow.step3.text">We move forward with regular check-ins, fast iterations, and smooth handoff or long-term support — depending on your needs.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="page-section p-0">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe
+            <div class="container m-0 w-100 mw-100" style="background-color: #1f1f1f;">
+                <div class="row">
+                    <div class="col w-100" style="background-image: url('assets/img/indico_workshop.jpg'); background-size: cover; height: 100vh; background-position: center;">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-0 w-100 mw-100 p-5" style="background-color: #fff0fa;">
+                <h2 class="text-center mb-4 w-100" data-i18n="stack.title">Tech Stack I Work With</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <i class="fab fa-python fa-4x text-warning"></i>
+                        <h5 class="mt-3">Python</h5>
+                        <p data-i18n="stack.python">Backend, APIs, automation, data workflows</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fab fa-react fa-4x text-info"></i>
+                        <h5 class="mt-3">React</h5>
+                        <p data-i18n="stack.react">Frontend SPAs, dynamic interfaces, hooks</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fab fa-html5 fa-3x text-danger"></i>
+                        <i class="fab fa-css3-alt fa-3x text-primary ms-2"></i>
+                        <h5 class="mt-3">HTML + CSS</h5>
+                        <p data-i18n="stack.htmlcss">Responsive layouts, clean design, accessibility</p>
+                    </div>
+                </div>
+            </div>
+            <section class="page-section text-white text-right" style="background-color: #1a252f;">
+                <div class="container">
+                    <div class="row font-weight-light">
+                        <div class="col">
+                            <h3 data-i18n="music.title">Music</h3>
+                            <p data-i18n="music.p1">
+                                Self-taught Portuguese Guitar and Classical Guitar player.
+                            </p>
+                            <p data-i18n="music.p2">
+                                Studying and regularly performing Coimbra Fado soloist and group repertoire in Lisbon. Occasionally performing Lisbon Fado as well, and other styles such as greek Rebetika.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
                     class="embed-responsive-item"
                     src="https://www.youtube-nocookie.com/embed/qUiY8bt-Iv0?si=OGtD23XI9D-3Wi79"
                     title="YouTube video player"
@@ -105,78 +165,78 @@
         <section class="page-section p-0">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe
-                    class="embed-responsive-item"
-                    src="https://www.youtube-nocookie.com/embed/uVX41VoRMfk?si=HBijNLtXj8MQMjbi"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
+                class="embed-responsive-item"
+                src="https://www.youtube-nocookie.com/embed/uVX41VoRMfk?si=HBijNLtXj8MQMjbi"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <div class="text-center">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0 text-uppercase" data-i18n="contact.title">Contact</h2>
             </div>
-        </section>
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACT</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Content-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
-                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:duarte@duartegalvao.pt">duarte@duartegalvao.pt</a>
-                        </div>
-                    </div>
-                </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
             </div>
-        </section>
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">LOCATION</h4>
-                        <p class="pre-wrap lead mb-0">Lisbon, Portugal</p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">SOCIAL MEDIA</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/duarte-galvão-4a2513154"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.github.com/duartegalvao"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCTPIcORjhZt3I5fgSZJuoBg"><i class="fab fa-fw fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/duarteagalvao"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/duartegalvao"><i class="fab fa-fw fa-instagram"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">MORE</h4>
-                        <p class="pre-wrap lead mb-0">Feel free to contact me for business inquiries at any time.</p>
+            <!-- Contact Section Content-->
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                        <div class="text-muted" data-i18n="contact.email">Email</div><a class="lead font-weight-bold" href="mailto:duarte@duartegalvao.pt">duarte@duartegalvao.pt</a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container"><small class="pre-wrap">Copyright © Duarte Galvão 2020 </small></div>
-        </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4 text-uppercase" data-i18n="footer.locationTitle">Location</h4>
+                    <p class="pre-wrap lead mb-0" data-i18n="footer.location">Lisbon, Portugal</p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4 text-uppercase" data-i18n="footer.socialTitle">Social media</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/duarte-galvão-4a2513154"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.github.com/duartegalvao"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCTPIcORjhZt3I5fgSZJuoBg"><i class="fab fa-fw fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/duarteagalvao"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/duartegalvao"><i class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="mb-4 text-uppercase" data-i18n="footer.moreTitle">More</h4>
+                    <p class="pre-wrap lead mb-0" data-i18n="footer.more">Feel free to contact me for business inquiries at any time.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container"><small class="pre-wrap">Copyright © Duarte Galvão 2025</small></div>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     </body>
 </html>

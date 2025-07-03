@@ -1,0 +1,49 @@
+{
+    "header": {
+        "subtitle": "Especialista em IT & músico"
+    },
+    "engineering": {
+        "title": "Engenharia Informática",
+        "p1": "Mestre pelo Instituto Superior Técnico (IST) da Universidade de Lisboa. Trabalhou como Monitor nas disciplinas de Arquitetura de Computadores e Bases de Dados.",
+        "p2": "Experiência profissional como Administrador de Sistemas e Desenvolvedor de Aplicações no Departamento de Engenharia Informática (DEI) do IST, e como Investigador Júnior no INESC-ID, no âmbito do projeto SARRROCA.",
+        "p3": "Trabalhou durante três anos como desenvolvedor full-stack no CERN em Genebra, Suíça, no projeto Indico — uma ferramenta web open-source para organização e arquivo de reuniões, palestras e conferências. Coordenou a colaboração entre o Indico e o JACoW, participando em conferências como o IPAC para realizar testes com utilizadores em cenários reais e desenvolver melhorias às ferramentas em conjunto com os seus utilizadores.",
+        "p4": "Atualmente trabalha como freelancer desenvolvendo plataformas web com foco em gestão e organização de eventos."
+    },
+    "workflow": {
+        "title": "Como Trabalho com Clientes",
+        "step1": {
+            "title": "1. Descoberta",
+            "text": "Começamos com uma conversa clara sobre os seus objetivos, necessidades e desafios. Faço perguntas e ouço com atenção."
+        },
+        "step2": {
+            "title": "2. Design da Solução",
+            "text": "Proponho uma solução personalizada, com a stack, cronograma e orçamento definidos. Tudo com clareza e transparência desde o início."
+        },
+        "step3": {
+            "title": "3. Desenvolvimento & Entrega",
+            "text": "Seguimos com checkpoints regulares, iterações rápidas e entrega suave — com suporte contínuo ou transição, conforme necessário."
+        }
+    },
+    "stack": {
+        "title": "Tecnologias que Utilizo",
+        "python": "Backend, APIs, automação, fluxos de dados",
+        "react": "SPAs frontend, interfaces dinâmicas, hooks",
+        "htmlcss": "Layouts responsivos, design limpo, acessibilidade"
+    },
+    "music": {
+        "title": "Música",
+        "p1": "Guitarrista autodidata de Guitarra Portuguesa e Guitarra Clássica.",
+        "p2": "Estuda e apresenta regularmente repertório de Fado de Coimbra em Lisboa, a solo e em grupo. Ocasionalmente interpreta também Fado de Lisboa e outros estilos como Rebetika grego."
+    },
+    "contact": {
+        "title": "Contacto",
+        "email": "E-mail"
+    },
+    "footer": {
+        "locationTitle": "Localização",
+        "location": "Lisboa, Portugal",
+        "socialTitle": "Redes sociais",
+        "moreTitle": "Mais",
+        "more": "Sinta-se à vontade para me contactar para propostas profissionais a qualquer momento."
+    }
+}
